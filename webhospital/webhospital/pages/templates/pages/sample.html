@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Muestra{% endblock %}
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <div class="about-heading-content mbtm">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5 forced">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">{{page.title}}</span>
+             <p><h6>
+              Esta página web utiliza cookies para analizar de forma anónima y estadística el uso que haces de la web, mejorar los contenidos y tu experiencia de navegación</h6></p>
+             <p><h6>
+              Este sitio es propiedad y está operado por el Sr. Palacios Meyer, Néstor Gustavo (nombre del responsable del servicio), ciudad de Charata, provincia del Chaco, República Argentina.
+
+              Dirección de correo electrónico Hosiptal de Charata:              
+              Correo electrónico: hospitalcharata@gmail.com
+              
+              El uso de esta web te da la condición de “Usuario”. 
+              Eso significa que aceptas los términos y condiciones establecidos a continuación y con ello te comprometes a no usarlo para fines ilegales.</h6></p>
+              <p><h6>Términos y Definiciones. 
+                Alos efectos de este documento se aplican las siguientes definiciones: Seguridad de la Información. La seguridad de la información se entiende como la preservación de las siguientes características:  <h6>Confidencialidad: </h6>
+                se garantiza que la información sea accesible sólo a aquellas personas autorizadas a tener acceso a la misma. 
+                <h6>Integridad: </h6>
+                se salvaguarda la exactitud y totalidad de la información y los métodos de procesamiento. 
+                <h6>Disponibilidad:</h6>
+                se garantiza que los usuarios autorizados tengan acceso a la información y a los recursos relacionados con la misma, toda vez que lo requieran. Adicionalmente, deberán considerarse los conceptos de: 
+                <h6>Autenticidad: </h6>
+                busca asegurar la validez de la información en tiempo, forma y distribución. Asimismo, se garantiza el origen de la información, validando el emisor para evitar suplantación de identidades. 
+                <h6>Auditabilidad: </h6>
+                define que todos los eventos de un sistema deben poder ser registrados para su control posterior. Protección a la duplicación: consiste en asegurar que una transacción sólo se realiza una vez, a menos que se especifique lo contrario. Impedir que se grabe una transacción para luego reproducirla, con el objeto de simular múltiples peticiones del mismo remitente original. No repudio: se refiere a evitar que una entidad que haya enviado o recibido información alegue ante terceros que no la envió o recibió. 
+                <h6>Legalidad: </h6>
+                referido al cumplimiento de las leyes, normas, reglamentaciones o disposiciones a las que está sujeta.</h6></p>
+
+            </h2>
+            <div class="section-content">
+              {{page.content|safe}}
+              {% if user.is_authenticated %}
+                <p><a href="">
+                  
+                </a></p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

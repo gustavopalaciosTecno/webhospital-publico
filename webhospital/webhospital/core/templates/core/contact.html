@@ -1,0 +1,102 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/contact.jpg' %}" alt="">
+    <div class="about-heading-content">
+      
+      <div class="row">
+        
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <table border="4" align="center" width="370" height="260">
+            <thead style="background-color: rgb(127, 225, 255);">
+              <h4 style="text-align:center;">Hospital de Charata</h4>
+                           
+                           
+            </thead>
+            <tbody style="background-color: rgb(92, 186, 240);">
+            <tr>
+              
+                <td>Localidad</td>
+                <td>Charata</td>
+                
+            </tr>
+            </tbody>
+            <tfoot style="background-color: rgb(92, 186, 240);">
+            <tr>
+                <td>Dirección</td>
+                <td>Mariano Castex 420</td>
+                
+            </tr>
+            </tfoot>
+            <tfoot style="background-color: rgb(92, 186, 240);">
+              <tr>
+                  <td>Teléfono</td>
+                  <td>03731 - 420070</td>
+              </tr>
+              </tfoot>
+              <tfoot style="background-color: rgb(92, 186, 240);">
+                <tr>
+                    <td>Email</td>
+                    <td>hospitalcharata@gmail.com
+                      <br>
+                      <a href="https://www.google.com/intl/es-419/gmail/about/">Contactar</a>
+                    </td>
+                   
+                </tr>
+                </tfoot>
+            </table>
+            
+            <!--
+          <div class="bg-faded rounded p-5">
+            
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper"></span>
+                             
+              <span class="section-heading-upper"></span>
+              
+              <span class="section-heading-lower"></span>
+            </h2>
+            -->
+                        
+            <!-- Formulario de contacto -->
+            <!--
+            <form>
+                <div class="form-group">
+                    <label>Nombre *</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                    </div>
+                    <ul class="errorlist">
+                        <li>El email no es correcto.</li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label>Mensaje *</label>
+                    <div class="input-group">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
+                </div>
+            </form>-->
+            <!-- Fin formulario de contacto -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

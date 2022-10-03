@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<!-- Cabecera -->
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/intro2.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper">Servicio a la comunidad</span>
+          <span class="section-heading-lower">Estamos sobre calle Mariano Castex</span>
+        </h2>
+        <p class="mb-3">Contamos con los mejores profesionales. Atención eficiente las 24horas.
+        </p>
+        <div class="intro-button mx-auto">
+          <a class="btn btn-primary btn-xl" href="https://www.google.com.ar/maps/place/Hospital+de+Charata+Dr.+E.+V.+de+Llamas/@-27.2086235,-61.1954372,16z/data=!4m9!1m2!2m1!1smapa+mariano+castex+hospital+charata!3m5!1s0x94475ba78b985f7b:0x3a41269d737d6b7a!8m2!3d-27.2086235!4d-61.1871975!15sCiRtYXBhIG1hcmlhbm8gY2FzdGV4IGhvc3BpdGFsIGNoYXJhdGGSAQhob3NwaXRhbA">Dónde estamos?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mensaje -->
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Compromiso con la comunidad</span>
+            <span class="section-heading-lower">Garantizado</span>
+          </h2>
+          <p class="mb-0">Nuestras metas se centran en ofrecer un servicio eficiente a nuestra comunidad y mejorar la calidad de vida de nuestros ciudadanos desde nuestra humilde institución.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
